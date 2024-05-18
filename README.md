@@ -1,8 +1,3 @@
-
-charlesyaas@gmail.com
-Smk_2013
-
-
 ## Setup
 
 Install composer
