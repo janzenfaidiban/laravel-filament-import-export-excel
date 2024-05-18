@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('pesertas', function (Blueprint $table) {
             $table->id();
-            $table->string('jenjang');
-            $table->string('npsn');
-            $table->string('nama_sekolah');
-            $table->string('orang_tua');
+            $table->string('jenjang')->nullable();
+            $table->string('npsn')->nullable();
+            $table->string('nama_sekolah')->nullable();
+            $table->string('orang_tua')->nullable();
             $table->string('nama_peserta');
             $table->string('tempat_lahir')->nullable();
             $table->date('tanggal_lahir')->nullable();
