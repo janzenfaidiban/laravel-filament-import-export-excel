@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Exports\PesertaExport;
 use App\Filament\Resources\PesertaResource\Pages;
 use App\Filament\Resources\PesertaResource\RelationManagers;
 use App\Models\Peserta;
@@ -9,10 +10,13 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\BulkAction;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Filters\SelectFilter;
+use Illuminate\Database\Eloquent\Collection;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PesertaResource extends Resource
 {
@@ -133,6 +137,11 @@ class PesertaResource extends Resource
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
+                    BulkAction::make('export')
+                    ->label('Export data ke Excel')
+                    ->action(function(Collection $records) {
+                        return Excel::download(new PesertaExport($records), 'peserta.xlsx');
+                    })
                 ]),
             ]);
     }
