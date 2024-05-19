@@ -8,6 +8,10 @@ Jalankan migrasi dan seeder ke database
 
 `php artisan migrate:fresh --seed`
 
+Hapus semua data dari database
+
+`php artisan migrate:reset`
+
 Jalankan `storage:link`
 
 `php artisan storage:link`
