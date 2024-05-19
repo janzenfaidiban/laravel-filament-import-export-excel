@@ -8,7 +8,11 @@ Jalankan migrasi dan seeder ke database
 
 `php artisan migrate:fresh --seed`
 
-Akun user ada di database > facetory
+Jalankan `storage:link`
+
+`php artisan storage:link`
+
+Akun user ada di database > factory
 
 Username : `charlesyaas@gmail.com`
 Password : `Smk_2013`
