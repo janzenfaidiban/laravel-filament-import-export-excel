@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VisitorController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(VisitorController::class)->group(function(){
+    Route::get('/','index')->name('visitor.home');
 });

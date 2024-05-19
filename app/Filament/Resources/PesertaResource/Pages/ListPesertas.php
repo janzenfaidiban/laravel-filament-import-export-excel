@@ -22,7 +22,7 @@ class ListPesertas extends ListRecords
             Action::make('importPeserta')
                 ->label('Import Peserta')
                 ->color('danger')
-                // ->icon('heroicon-o-document-download')
+                ->icon('heroicon-o-academic-cap')
                 ->form([
                     FileUpload::make('attachment'),
                 ])
