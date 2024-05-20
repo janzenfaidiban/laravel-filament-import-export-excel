@@ -38,7 +38,7 @@
     </main>
     <!-- main end -->
 
-    <footer class="p-5 text-center">
+    <footer class="py-3 py-xl-5 text-center">
         {{-- <div class="py-1 py-xl-5">
             <a href="#" class="btn btn-secondary">Privacy & Policy</a>
             <a href="#" class="btn btn-secondary">Disclaimer</a>

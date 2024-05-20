@@ -29,6 +29,7 @@ class PesertaResource extends Resource
     protected static ?string $navigationBadgeTooltip = 'Jumlah Peserta';
 
     protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
+    protected static ?string $exportIcon = 'heroicon-o-rectangle-stack';
 
     public static function getNavigationBadge(): ?string
     {
@@ -139,6 +140,7 @@ class PesertaResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                     BulkAction::make('export')
                     ->label('Export data ke Excel')
+                    ->icon('heroicon-o-arrow-down-on-square')
                     ->action(function(Collection $records) {
                         return Excel::download(new PesertaExport($records), 'peserta.xlsx');
                     })
