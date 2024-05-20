@@ -15,10 +15,10 @@
 </head>
 <body>
 
-    <header class="p-5">
-        <div class="row pt-5">
+    <header class="p-3 p-xl-5">
+        <div class="row pt-0 pt-xl-5">
             <div class="col-xl-6 mx-auto">
-                <div class="d-flex gap-4">
+                <div class="text-center text-xl-start d-sm-inline-block d-xl-flex gap-4">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/220px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Tut Wuri Handayani" width="100px">
                     </div>
@@ -33,18 +33,18 @@
     </header>
     <!-- header end -->
 
-    <main class="p-5">
+    <main class="p-1 p-xl-5">
         @yield('content')
     </main>
     <!-- main end -->
 
     <footer class="p-5 text-center">
-        <div class="py-5">
+        {{-- <div class="py-1 py-xl-5">
             <a href="#" class="btn btn-secondary">Privacy & Policy</a>
             <a href="#" class="btn btn-secondary">Disclaimer</a>
             <a href="#" class="btn btn-secondary">Q&A</a>
             <a href="#" class="btn btn-secondary">Kontak</a>
-        </div>
+        </div> --}}
 
         <p>Copyright &copy; 2024 - All right reserved.</p>
 
