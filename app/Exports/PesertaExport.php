@@ -46,6 +46,7 @@ class PesertaExport implements FromCollection, WithMapping, WithHeadings
         return [
             'Jenjang',
             'Nama Sekolah',
+            'Orang Tua',
             'Nama Peserta',
             'Tempat, Tanggal Lahir',
             // 'Tempat Lahir',
