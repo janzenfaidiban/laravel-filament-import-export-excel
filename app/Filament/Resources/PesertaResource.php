@@ -55,10 +55,13 @@ class PesertaResource extends Resource
                 Forms\Components\TextInput::make('nama_peserta')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('tempat_lahir')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\DatePicker::make('tanggal_lahir'),
+                Forms\Components\TextInput::make('tempat_tanggal_lahir')
+                    ->required()
+                    ->maxLength(255),
+                // Forms\Components\TextInput::make('tempat_lahir')
+                //     ->maxLength(255)
+                //     ->default(null),
+                // Forms\Components\DatePicker::make('tanggal_lahir'),
                 Forms\Components\TextInput::make('tahun_lulus'),
                 Forms\Components\TextInput::make('nomor_ujian')
                     ->maxLength(255)
@@ -87,11 +90,13 @@ class PesertaResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('nama_peserta')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('tempat_lahir')
+                Tables\Columns\TextColumn::make('tempat_tanggal_lahir')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('tanggal_lahir')
-                    ->date()
-                    ->sortable(),
+                // Tables\Columns\TextColumn::make('tempat_lahir')
+                //     ->searchable(),
+                // Tables\Columns\TextColumn::make('tanggal_lahir')
+                //     ->date()
+                //     ->sortable(),
                 Tables\Columns\TextColumn::make('tahun_lulus'),
                 Tables\Columns\TextColumn::make('nomor_ujian')
                     ->searchable(),
