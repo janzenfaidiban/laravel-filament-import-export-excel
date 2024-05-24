@@ -28,15 +28,17 @@
     <header class="p-3 p-xl-5 bg-primary text-white shadow">
         <div class="row pt-0 ">
             <div class="col-xl-8">
-                <div class="text-center text-xl-start d-sm-inline-block d-xl-flex gap-4">
+                <a href="{{ route('visitor.home') }}" class="link-white">
+                    <div class="text-center text-xl-start d-sm-inline-block d-xl-flex gap-4">
                     <div>
                         <img src="{!! $siteLogo ?? 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coat_of_arms_of_Papua_2.svg/1200px-Coat_of_arms_of_Papua_2.svg.png' !!}" alt="Tut Wuri Handayani" width="80px">
                     </div>
                     <div>
-                        <h1 class="fw-bold">{!! $siteTitle ?? '' !!}</h1>
-                        <p class="fs-4">{!! $siteDescription ?? '' !!}</p>
+                        <h1 class="fw-bold link-light ">{!! $siteTitle ?? '' !!}</h1>
+                        <p class="fs-4 link-light ">{!! $siteDescription ?? '' !!}</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
         
@@ -60,6 +62,9 @@
 
     </footer>
     <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     
 </body>
 </html>

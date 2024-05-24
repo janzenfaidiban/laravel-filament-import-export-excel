@@ -53,39 +53,59 @@
 
                 <div class="card shadow p-5">
                     <div class="card-body">
-
-                        <div class="d-flex gap-3 justify-content-end">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-file-lines me-1"></i> Layanan
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fa-solid fa-file-lines me-1"></i> Surat Keterangan Pengganti Ijazah
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fa-solid fa-file-lines me-1"></i> Surat Keterangan Kesalahan Penulisan Ijazah
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <a href="{{ url('admin/login') }}" class="btn btn-primary">
-                                    <i class="fa-solid fa-door-open me-1"></i> Login
-                                </a>
-                            </div>
-                        </div>
-
                 
-                        <div class="py-5">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Jenjang</th>
+                                        <th>NPSN</th>
+                                        <th>Nama Sekolah</th>
+                                        {{-- <th>Nama Orang Tua</th> --}}
+                                        <th>Nama Lengkap Peserta</th>
+                                        {{-- <th>Tempat Lahir</th>
+                                        <th>Tanggal Lahir</th> --}}
+                                        <th>Tahun Lulus</th>
+                                        <th>Nomor Ujian</th>
+                                        <th>Nomor Ijazah</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @forelse ($datas as $item)
+                                        <tr>
+                                            <td>{{ ++$no }}</td>
+                                            <td>{{ $item->jenjang ?? '' }}</td>
+                                            <td>{{ $item->npsn ?? '' }}</td>
+                                            <td>{{ $item->nama_sekolah ?? '' }}</td>
+                                            {{-- <td>{{ $item->orang_tua ?? '' }}</td> --}}
+                                            <td>{{ $item->nama_peserta ?? '' }}</td>
+                                            {{-- <td>{{ $item->tempat_lahir ?? '' }}</td> --}}
+                                            {{-- <td>{{ $item->tanggal_lahir ?? '' }}</td> --}}
+                                            <td>{{ $item->tahun_lulus ?? '' }}</td>
+                                            <td>{{ $item->nomor_ujian ?? '' }}</td>
+                                            <td>{{ $item->nomor_ijazah ?? '' }}</td>
+                                        </tr>
+                                        
+                                    @empty
+                                        <tr>
+                                            <td colspan="11">
+                                                Data Tidak Ditemukan
+                                            </td>
+                                        </tr>
+                                    @endforelse
+
+                                </tbody>
+                            </table>
+
+                            {{-- {!! $datas->links() !!} --}}
+                            {{ $datas->links('vendor.pagination.bootstrap-5') }}
+                            
+                            {{-- {{ $datas->links('vendor.pagination.bootstrap-4', ['foo' => 'bar']) }} --}}
+
                         </div>
+
 
 
                     </div>

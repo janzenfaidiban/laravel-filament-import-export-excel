@@ -5,4 +5,5 @@ use App\Http\Controllers\VisitorController;
 
 Route::controller(VisitorController::class)->group(function(){
     Route::get('/','index')->name('visitor.home');
+    Route::get('/hasilPencarian','hasilPencarian')->name('hasilPencarian');
 });
