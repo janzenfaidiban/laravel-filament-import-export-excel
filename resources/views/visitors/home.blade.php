@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xl-3 mb-5">
 
-                <div class="card shadow">
+                <div class="card shadow rounded-0">
                     <div class="card-body p-5">
 
                         @include('visitors.includes.form')
@@ -21,7 +21,7 @@
             
             <div class="col-xl-9">
 
-                <div class="card shadow p-5">
+                <div class="card shadow p-5 rounded-0">
                     <div class="card-body">
 
                 

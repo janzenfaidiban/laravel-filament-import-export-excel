@@ -58,7 +58,11 @@
             <a href="#" class="btn btn-secondary">Kontak</a>
         </div> --}}
 
-        <p>Copyright &copy; 2024 - All right reserved.</p>
+        <div style="font-size: 80%" class="text-secondary">
+            <p class="lh-lg">
+                Copyright &copy; 2023 - Sekretariat Asesmen Nasional, <strong>Dinas Pendidikan Provinsi Papua, </strong>Jalan Tangjung Ria Base G, Jayapura, Papua, 99117
+            </p>
+        </div>
 
     </footer>
     <!-- footer end -->
