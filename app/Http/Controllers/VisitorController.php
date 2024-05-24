@@ -16,12 +16,18 @@ class VisitorController extends Controller
         $totalSMP = Peserta::where('jenjang', 'SMP')->count();
         $totalSMA = Peserta::where('jenjang', 'SMA')->count();
         $totalSMK = Peserta::where('jenjang', 'SMK')->count();
+        $totalPaketA = Peserta::where('jenjang', 'Paket-A')->count();
+        $totalPaketB = Peserta::where('jenjang', 'Paket-B')->count();
+        $totalPaketC = Peserta::where('jenjang', 'Paket-C')->count();
 
         return view('visitors.home', compact(
                                                 'totalSD',
                                                 'totalSMP',
                                                 'totalSMA',
                                                 'totalSMK',
+                                                'totalPaketA',
+                                                'totalPaketB',
+                                                'totalPaketC',
                                             ));
     }
 
@@ -43,21 +49,12 @@ class VisitorController extends Controller
                 if (($nomor_ijazah = $request->nomor_ijazah)) {$query->where('nomor_ijazah', 'LIKE', '%' . $nomor_ijazah . '%')->get();}
             }]
         ])->latest('id')->paginate(10);
-
-        $totalSD = Peserta::where('jenjang', 'SD')->count();
-        $totalSMP = Peserta::where('jenjang', 'SMP')->count();
-        $totalSMA = Peserta::where('jenjang', 'SMA')->count();
-        $totalSMK = Peserta::where('jenjang', 'SMK')->count();
         
         $no = '0';
 
         return view('visitors.hasilPencarian', compact(
                                                         'datas', 
                                                         'no',
-                                                        'totalSD',
-                                                        'totalSMP',
-                                                        'totalSMA',
-                                                        'totalSMK',
                                                     ));
     }
 }
