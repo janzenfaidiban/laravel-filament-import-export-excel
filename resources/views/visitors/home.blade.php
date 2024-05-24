@@ -29,7 +29,7 @@
                             
                             <div class="row">
                                 <div class="col-xl-8 mx-xl-auto">
-                                    <h4>Selamat Datang di Aplikasi Pencarian Data Lulusan</h4>
+                                    <h3 class="fw-bold text-primary">Selamat Datang di Aplikasi Pencarian Data Lulusan</h3>
 
                                     <p>Kami dengan bangga mempersembahkan sebuah aplikasi inovatif yang dirancang untuk memudahkan pencarian data lulusan dari berbagai jenjang pendidikan, mulai dari SD, SMP, SMA, SMK, hingga program pendidikan non-formal seperti Paket A, Paket B, dan Paket C. Aplikasi ini hadir sebagai solusi modern untuk memenuhi kebutuhan informasi pendidikan yang akurat dan dapat diakses dengan mudah oleh semua kalangan. Dengan antarmuka yang user-friendly dan fitur pencarian yang canggih, kami berharap aplikasi ini dapat membantu para pengguna dalam menemukan data lulusan secara cepat dan efisien.</p>
 

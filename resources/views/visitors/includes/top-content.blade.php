@@ -7,10 +7,10 @@
                 </div>
                 <div class="d-flex justify-content-between gap-2">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-file-lines me-1"></i> Layanan
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu rounded-0">
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <i class="fa-solid fa-file-lines me-1"></i> Surat Keterangan Pengganti Ijazah
@@ -25,7 +25,7 @@
                     </div>
 
                     <div>
-                        <a href="{{ url('admin/login') }}" class="btn btn-primary">
+                        <a href="{{ url('admin/login') }}" class="btn btn-primary rounded-0">
                             <i class="fa-solid fa-door-open me-1"></i> Login
                         </a>
                     </div>
