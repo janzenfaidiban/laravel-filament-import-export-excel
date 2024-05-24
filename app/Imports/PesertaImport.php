@@ -14,6 +14,7 @@ class PesertaImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         return new Peserta([
+            'kab_kota'  => $row['kab_kota'],
             'jenjang'  => $row['jenjang'],
             'npsn'  => $row['npsn'],
             'nama_sekolah'  => $row['nama_sekolah'],

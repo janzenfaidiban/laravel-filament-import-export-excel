@@ -40,6 +40,9 @@ class PesertaResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('kab_kota')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('jenjang')
                     ->required()
                     ->maxLength(255),
@@ -76,6 +79,9 @@ class PesertaResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('kab_kota')
+                    ->searchable()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('jenjang')
                     ->searchable()
                     ->sortable(),

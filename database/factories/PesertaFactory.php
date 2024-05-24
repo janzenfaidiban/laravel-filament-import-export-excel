@@ -9,6 +9,7 @@ class PesertaFactory extends Factory
     public function definition(): array
     {
         return [
+            'kab_kota' => fake()->randomElement(['Kabupaten Jayapura', 'Kota Jayapura', 'Kabupaten Biak', 'Kabupaten Sarmi', 'Kabupaten Serui']),
             'jenjang' => fake()->randomElement(['SD', 'SMP', 'SMA', 'SMK']),
             'npsn' => fake()->randomElement(['2011', '2012', '2013', '2014', '2015', '2016', '2017']),
             'nama_sekolah' => fake()->randomElement(['SMK Negeri 1 Sentani', 'SMA Negeri 1 Sentani', 'SMK Negeri 5 Waibu', 'SMP Negeri 1 Sentani', 'SMP Negeri 2 Sentani', 'SMK YPPK Sentani']),

@@ -16,6 +16,7 @@ class PesertaSeeder extends Seeder
         // using colelction
         collect([
             [
+                'kab_kota' => fake()->randomElement(['Kabupaten Jayapura', 'Kota Jayapura', 'Kabupaten Biak', 'Kabupaten Sarmi', 'Kabupaten Serui']),
                 'jenjang' => fake()->randomElement(['SMK', 'SMA']),
                 'npsn' => '123',
                 'nama_sekolah' => 'SMK Negeri 1 Sentani',
@@ -29,6 +30,7 @@ class PesertaSeeder extends Seeder
                 'nomor_ijazah' => null,
             ],
             [
+                'kab_kota' => fake()->randomElement(['Kabupaten Jayapura', 'Kota Jayapura', 'Kabupaten Biak', 'Kabupaten Sarmi', 'Kabupaten Serui']),
                 'jenjang' => fake()->randomElement(['SMA', 'SMK']),
                 'npsn' => '123',
                 'nama_sekolah' => 'SMK Negeri 1 Sentani',

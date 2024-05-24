@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('pesertas', function (Blueprint $table) {
             $table->id();
+            $table->string('kab_kota')->nullable();
             $table->string('jenjang')->nullable();
             $table->string('npsn')->nullable();
             $table->string('nama_sekolah')->nullable();
