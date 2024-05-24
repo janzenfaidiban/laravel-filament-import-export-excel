@@ -60,9 +60,17 @@
 
                 
                         <div class="py-5">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            
+                            <div class="row">
+                                <div class="col-xl-8 mx-xl-auto">
+                                    <h4>Selamat Datang di Aplikasi Pencarian Data Lulusan</h4>
+
+                                    <p>Kami dengan bangga mempersembahkan sebuah aplikasi inovatif yang dirancang untuk memudahkan pencarian data lulusan dari berbagai jenjang pendidikan, mulai dari SD, SMP, SMA, SMK, hingga program pendidikan non-formal seperti Paket A, Paket B, dan Paket C. Aplikasi ini hadir sebagai solusi modern untuk memenuhi kebutuhan informasi pendidikan yang akurat dan dapat diakses dengan mudah oleh semua kalangan. Dengan antarmuka yang user-friendly dan fitur pencarian yang canggih, kami berharap aplikasi ini dapat membantu para pengguna dalam menemukan data lulusan secara cepat dan efisien.</p>
+
+                                    <p>Sebagai komitmen kami terhadap kualitas pendidikan dan transparansi informasi, aplikasi ini terus diperbarui dan ditingkatkan agar tetap relevan dengan perkembangan teknologi dan kebutuhan masyarakat. Kami percaya bahwa dengan adanya akses yang mudah terhadap data lulusan, masyarakat dapat lebih terbantu dalam mengambil keputusan yang berkaitan dengan pendidikan, baik itu untuk keperluan studi lanjut, pekerjaan, maupun keperluan lainnya. Terima kasih telah menggunakan aplikasi kami, dan kami berharap Anda mendapatkan manfaat yang maksimal dari layanan yang kami sediakan.</p>
+                                </div>
+                            </div>
+
                         </div>
 
 

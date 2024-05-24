@@ -1,4 +1,4 @@
-        <div class="mb-3">
+        <div class="my-3">
             <div class="d-flex gap-3 justify-content-between">
                 <div>
                     <h5 class="mb-4 d-block fw-bold">
