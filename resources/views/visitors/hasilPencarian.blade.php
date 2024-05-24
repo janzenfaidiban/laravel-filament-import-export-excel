@@ -3,6 +3,9 @@
 @section('content')
 
     <div class="container-fluid">
+
+        @include('visitors.includes.top-content')
+        
         <div class="row">
             <div class="col-xl-3 mb-5">
 
