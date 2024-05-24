@@ -37,6 +37,10 @@
                                 </div>
                             </div>
 
+                            @include('visitors.includes.total')
+                            
+                            
+
                         </div>
 
 

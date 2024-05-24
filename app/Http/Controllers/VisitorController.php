@@ -11,7 +11,18 @@ class VisitorController extends Controller
 
     public function index(Request $request)
     {
-        return view('visitors.home');
+
+        $totalSD = Peserta::where('jenjang', 'SD')->count();
+        $totalSMP = Peserta::where('jenjang', 'SMP')->count();
+        $totalSMA = Peserta::where('jenjang', 'SMA')->count();
+        $totalSMK = Peserta::where('jenjang', 'SMK')->count();
+
+        return view('visitors.home', compact(
+                                                'totalSD',
+                                                'totalSMP',
+                                                'totalSMA',
+                                                'totalSMK',
+                                            ));
     }
 
     public function hasilPencarian(Request $request)
@@ -32,9 +43,21 @@ class VisitorController extends Controller
                 if (($nomor_ijazah = $request->nomor_ijazah)) {$query->where('nomor_ijazah', 'LIKE', '%' . $nomor_ijazah . '%')->get();}
             }]
         ])->latest('id')->paginate(10);
+
+        $totalSD = Peserta::where('jenjang', 'SD')->count();
+        $totalSMP = Peserta::where('jenjang', 'SMP')->count();
+        $totalSMA = Peserta::where('jenjang', 'SMA')->count();
+        $totalSMK = Peserta::where('jenjang', 'SMK')->count();
         
         $no = '0';
 
-        return view('visitors.hasilPencarian', compact('datas', 'no'));
+        return view('visitors.hasilPencarian', compact(
+                                                        'datas', 
+                                                        'no',
+                                                        'totalSD',
+                                                        'totalSMP',
+                                                        'totalSMA',
+                                                        'totalSMK',
+                                                    ));
     }
 }
