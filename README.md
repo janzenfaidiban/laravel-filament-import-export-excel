@@ -16,10 +16,6 @@ Jalankan `storage:link`
 
 `php artisan storage:link`
 
-Akun user ada di database > factory
-
-Username : `charlesyaas@gmail.com`
-Password : `Smk_2013`
 
 ## Tutorial videos for import and export
 
